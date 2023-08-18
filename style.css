@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Roboto+Condensed:wght@300&display=swap');
+
+
 *{
     height: 100%;
   }
   body{
-   background: yellow;
+    font-family: 'Inconsolata', monospace;
+    background: yellow;
   }
   #fundo{
     width: 60vw;
@@ -28,4 +32,8 @@
   }
   p{
     padding-top: 5vh;
+  }
+  a{
+    text-decoration: none;
+    font-weight: bold;
   }
