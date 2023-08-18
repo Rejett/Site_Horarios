@@ -1,0 +1,31 @@
+*{
+    height: 100%;
+  }
+  body{
+   background: yellow;
+  }
+  #fundo{
+    width: 60vw;
+    height: 45vh;  
+    background-color: white;
+    text-align: center;
+    margin: auto;
+    margin-top: 20vh;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px 5px rgba(114, 114, 114, 0.281);
+  }
+  h1{
+    padding-top: 6vh;
+  }
+  #circulo{
+    background-image: url(https://blog.malupires.com.br/wp-content/uploads/2023/03/malu_pires-2023-03-09T125512.852.jpg);
+    height: 100px;
+    width: 150px;
+    border-radius: 50%;
+    margin: auto;
+    margin-top: -35vh;
+    box-shadow: 2px 2px 2px 2px rgba(116, 116, 116, 0.267);
+  }
+  p{
+    padding-top: 5vh;
+  }

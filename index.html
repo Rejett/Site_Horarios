@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horarios!</title>
+    <link rel="stylesheet" href="style.css">
+ </head> 
+ <body id="body"> 
+  <main id="fundo"> 
+   <h1 id="titulo">Agora são {} Horas</h1> 
+   <div id="circulo"> 
+   </div>
+   <p>Site criado por: Matheus_Carmo</p> 
+  </main> 
+ </body>
+</html>
+<script>
+var data = new Date()
+var hora = data.getHours()
+var minutos = data.getMinutes()
+var  txt = window.document.getElementById("titulo")
+var fundo = window.document.getElementById("circulo")
+if (hora < 12){
+    txt.innerHTML = `Agora são ${hora}:${minutos} tenha  um bom dia!`
+    body.style.background = "linear-gradient(to bottom, #3A73E6, #579AF2, #5EBAF2)"
+    circulo.style.backgroundImage = "url(https://www.reportersul.com.br/tim.php?src=uploads/images/2020/07/mais-um-dia-de-sol-e-temperatura-elevada-em-sc-1595502961.jpg&w=1600&h=800)"
+} 
+if (hora > 12 && hora < 18){
+    txt.innerHTML = `Agora são ${hora}:${minutos} tenha uma boa Tarde!`
+    body.style.background = "linear-gradient(to bottom, #F2C12E, #F29B30, #D93425)"
+}
+if (hora > 18 && hora <=24){
+    txt.innerHTML = `Agora são ${hora}:${minutos} tenha  uma boa noite!`
+    body.style.background = "linear-gradient(to bottom, #010326, #0A0E59, #081459)"
+    circulo.style.backgroundImage = "url(https://img.freepik.com/fotos-gratis/3d-rendem-de-uma-arvore-assustador-de-encontro-a-uma-lua_1048-2912.jpg?w=1060&t=st=1692380889~exp=1692381489~hmac=ca05c3c37118257791d2681cfe81978de7b054abf9d4a2b9609a875890d0243c)"
+}
+</script>
